@@ -1,3 +1,11 @@
+:root{
+	--footer-clr: #4682b4;
+	--navigation-clr: #4682b4;
+	--body-clr: #5f6c78;
+	--hero-clr: #439a96;
+	--text-crl: #fff;
+}
+
 *{
 	box-sizing: border-box;
 	margin: 0;
@@ -6,11 +14,17 @@
 
 body{
 	font-size: 20px;
-	background-color: #333;
+	background-color: var(--body-clr);
 	width: 100vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	width: 100vw;
 }
 
 .text{
@@ -19,7 +33,7 @@ body{
 
 .navigation{
 	height: 60px;
-	background-color: #555;
+	background-color: var(--navigation-clr);
 }
 
 .logo{
@@ -44,7 +58,7 @@ body{
 .nav-links a{
 	color: #fff;
 	padding: 1rem;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	text-decoration: none;
 }
 
@@ -54,11 +68,9 @@ body{
 
 
 .hero{
-	background-color: #444;
+	background-color: var(--hero-clr);
 	height: 400px;
 	width: 90%;
-	display: flex;
-	flex-direction: column;
 }
 
 h1{
@@ -72,13 +84,19 @@ p{
 }
 
 .about{
-	background-color: #555;
+	background-color: #444;
+	height: 400px;
+	width: 90%;
+}
+
+.projects{
+	background-color: #333;
 	height: 400px;
 	width: 90%;
 }
 
 .contact{
-	background-color: #666;
+	background-color: #444;
 	height: 400px;
 	width: 90%;
 }
@@ -101,8 +119,9 @@ button:hover{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #555;
+	background-color: var(--footer-clr);
 	height: 60px;
+	width: 100%;
 	position: relative;
 	bottom: 0;
 }
