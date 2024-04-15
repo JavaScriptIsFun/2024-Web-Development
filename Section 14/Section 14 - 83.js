@@ -1,9 +1,8 @@
-var yourMessage = "Hello";
-var yourName = "Andre";
-var length = 100;
-
-prompt("yourMessage");
+// var tweet = prompt("Your message!");
+// var tweetCount = tweet.length;
+// alert("You have written " + tweetCount + " characters, you have " +(100 - tweetCount) + " characters remaining.");
 /* prompt(yourMessage); */
-alert("You" + " have" + " written " + length.length + " characters");
+/* You have written 100 characters, you have -10 characters left. */
 
-// You have written 100 characters, you have -10 characters left.
+
+
